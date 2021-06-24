@@ -366,7 +366,7 @@ for (let i = 0; i < target.length; i++) {
         });
         target[i].querySelector(".main p").classList.add("type");
 
-        setTimeout(typeWriterEffect, 100);
+        setTimeout(typeWriterEffect, 500);
       }
     };
   }
@@ -376,14 +376,14 @@ for (let i = 0; i < target.length; i++) {
 window.addEventListener("hashchange", function () {
   if (location.hash === "") {
     document.querySelector(".logo-intro").classList.add("type");
-    setTimeout(typeWriterEffect, 100);
+    setTimeout(typeWriterEffect, 500);
   }
 });
 
 // Control Intro on load
 window.addEventListener("load", function () {
   document.querySelector(".logo-intro").classList.add("type");
-  setTimeout(typeWriterEffect, 100);
+  setTimeout(typeWriterEffect, 500);
 });
 
 // Control all sections on load
@@ -436,7 +436,7 @@ window.addEventListener("hashchange", function () {
     allSkills.forEach((skill) => {
       setTimeout(function () {
         skill.style.width = skill.dataset.progress;
-      }, 500);
+      }, 1000);
     });
   } else {
     allSkills.forEach((skill) => {
@@ -450,7 +450,7 @@ window.addEventListener("load", function () {
   allSkills.forEach((skill) => {
     setTimeout(function () {
       skill.style.width = skill.dataset.progress;
-    }, 500);
+    }, 1000);
   });
 });
 /////////////////////////////////////////////////////////////
