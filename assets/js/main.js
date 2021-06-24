@@ -412,7 +412,7 @@ function typeWriterEffect() {
   let typeWriter = setInterval(function () {
     document.querySelector(".type").textContent += myText.charAt(i);
     i = i + 1;
-  }, 50);
+  }, 100);
 
   document.querySelectorAll(".close").forEach(function (e) {
     e.addEventListener("click", function () {
