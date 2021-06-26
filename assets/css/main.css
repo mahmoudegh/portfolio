@@ -1910,7 +1910,13 @@ body.is-preload #footer {
   padding: 38% 0 40%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: ; */
+  flex-wrap: wrap;
+}
+
+.featured-work-items .title h3 {
+  width: 100%;
+  text-transform: none;
 }
 
 .featured-work-items .title a {
@@ -1928,7 +1934,7 @@ body.is-preload #footer {
 }
 
 .featured-work-items .shuffel {
-  width: 33.333%;
+  width: 50%;
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
