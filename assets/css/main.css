@@ -1007,6 +1007,7 @@ ul.icons {
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 590px) {
   ul.icons {
@@ -1015,7 +1016,8 @@ ul.icons {
     justify-content: center;
   }
   .my-mobile,
-  .submit-btn {
+  .submit-btn,
+  .my-email {
     width: 100%;
   }
   ul.icons li {
@@ -1124,6 +1126,7 @@ input[type="button"],
 button,
 .button,
 .my-mobile,
+.my-email,
 .upload-file {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1143,7 +1146,7 @@ button,
   font-size: 0.8rem;
   font-weight: 300;
   height: 2.75rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   line-height: 2.75rem;
   outline: 0;
   padding: 0 1.25rem 0 1.35rem;
@@ -1153,14 +1156,26 @@ button,
   white-space: nowrap;
 }
 
-.my-mobile {
-  padding-right: 18px;
-  padding-left: 18px;
+.my-mobile,
+.my-email {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.my-email {
+  text-transform: none;
+}
+
+.my-email i {
+  margin-right: 2px;
 }
 
 .upload-file {
   width: 100%;
   margin: 0;
+}
+.social-icons-container {
+  margin: 20px auto 0;
 }
 
 .social-icons-container li:not(:last-child) {
