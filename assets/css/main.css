@@ -1160,6 +1160,7 @@ button,
 .my-email {
   padding-right: 15px;
   padding-left: 15px;
+  cursor: default;
 }
 
 .my-email {
