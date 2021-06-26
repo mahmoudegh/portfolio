@@ -1837,10 +1837,6 @@ body.is-preload #footer {
 /* End Intro Section */
 
 /* Start Featured Work Section */
-.featured-work {
-  padding: 70px 0;
-}
-
 .featured-work .h1 {
   font-weight: 900;
   margin-bottom: 30px;
