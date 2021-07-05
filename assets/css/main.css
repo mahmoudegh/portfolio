@@ -1921,16 +1921,12 @@ body.is-preload #footer {
   border: 1px solid #ccc;
   width: 100%;
   height: 100%;
-  padding: 38% 0 40%;
-  display: flex;
-  justify-content: space-evenly;
-  /* align-items: ; */
-  flex-wrap: wrap;
 }
 
 .featured-work-items .title h3 {
   width: 100%;
   text-transform: none;
+  margin: 20px auto 50px;
 }
 
 .featured-work-items .title a {
@@ -1940,7 +1936,7 @@ body.is-preload #footer {
   text-decoration: none;
   border: 0;
   opacity: 0.5;
-  /* letter-spacing: 2px; */
+  margin: 10px;
 }
 
 .featured-work-items .title a:hover {
@@ -1948,9 +1944,9 @@ body.is-preload #footer {
 }
 
 .featured-work-items .shuffel {
-  width: calc(50% - 10px);
+  width: 100%;
   height: 300px;
-  margin: 5px;
+  margin: 20px;
   border-radius: 20px;
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1961,13 +1957,7 @@ body.is-preload #footer {
 
 @media (max-width: 500px) {
   .featured-work-items .shuffel {
-    width: 100%;
-  }
-}
-
-@media (min-width: 501px) and (max-width: 800px) {
-  .featured-work-items .shuffel {
-    width: calc(50% - 10px);
+    height: 200px;
   }
 }
 /* End Featured Work Section */
