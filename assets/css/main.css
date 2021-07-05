@@ -1890,6 +1890,7 @@ body.is-preload #footer {
 .featured-work-items img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 .featured-work-items .overlay {
@@ -1913,6 +1914,7 @@ body.is-preload #footer {
   bottom: 0;
   left: 0;
   right: 0;
+  border-radius: 20px;
 }
 
 .featured-work-items .title {
@@ -1946,7 +1948,10 @@ body.is-preload #footer {
 }
 
 .featured-work-items .shuffel {
-  width: 50%;
+  width: calc(50% - 10px);
+  height: 300px;
+  margin: 5px;
+  border-radius: 20px;
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -1962,7 +1967,7 @@ body.is-preload #footer {
 
 @media (min-width: 501px) and (max-width: 800px) {
   .featured-work-items .shuffel {
-    width: 50%;
+    width: calc(50% - 10px);
   }
 }
 /* End Featured Work Section */
