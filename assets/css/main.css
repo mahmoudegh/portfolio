@@ -1907,7 +1907,9 @@ body.is-preload #footer {
 .item-5:hover .overlay,
 .item-6:hover .overlay,
 .item-7:hover .overlay,
-.item-8:hover .overlay {
+.item-8:hover .overlay,
+.item-9:hover .overlay,
+.item-10:hover .overlay {
   display: flex;
   position: absolute;
   top: 0;
