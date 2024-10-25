@@ -1169,6 +1169,14 @@ button,
   width: 47%;
 }
 
+@media (max-width: 590px) {
+
+  .my-mobile,
+  .my-email {
+    width: 100%;
+  }
+}
+
 .my-email {
   text-transform: none;
 }
@@ -1188,6 +1196,12 @@ button,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 590px) {
+  .social-icons-container {
+    margin: 0 auto;
+  }
 }
 
 .social-icons-container li {
