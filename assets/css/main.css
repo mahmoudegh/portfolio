@@ -1037,7 +1037,7 @@ ul.icons li {
   display: inline-block;
 }
 
-ul.icons li a {
+ul.icons li a.brands {
   border-radius: 100%;
   box-shadow: inset 0 0 0 1px #ffffff;
   display: inline-block;
