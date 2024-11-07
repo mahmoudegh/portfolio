@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Mahmoud Galal - Frontend Web Developer">
-	<meta property="og:description" 
-      content="Explore Mahmoud Galal's portfolio, a frontend web developer skilled in Vue, Nuxt, JavaScript, HTML, CSS, and Bootstrap. Discover innovative projects, efficient UI solutions, and a passion for delivering dynamic, responsive web applications.">
+	<meta property="og:description"
+		content="Explore Mahmoud Galal's portfolio, a frontend web developer skilled in Vue, Nuxt, JavaScript, HTML, CSS, and Bootstrap. Discover innovative projects, efficient UI solutions, and a passion for delivering dynamic, responsive web applications.">
 	<meta property="og:image" content="https://mahmoudegh.github.io/portfolio/images/bg.jpg">
 	<meta property="og:url" content="https://mahmoudegh.github.io/portfolio/">
 	<meta property="og:type" content="website">
@@ -56,12 +56,12 @@
 
 			<a class="direct-download-link" href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
 				download="mahmoud_galal_frontend_web_developer_cv.pdf" target="_blank">Download My Resume</a>
-						
-			
-			
+
+
+
 		</header>
 
-		
+
 
 		<!-- Main -->
 		<div id="main">
@@ -137,8 +137,8 @@
 								</div>
 							</div>
 						</div>
-						
-						
+
+
 						<div class="shuffel item-5">
 							<img class="completed img-responsive" src="images/works/05.jpeg" alt="Featured Work" />
 							<div class="overlay">
@@ -158,7 +158,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="shuffel item-7">
 							<img class="development img-responsive" src="images/works/07.jpeg" alt="Featured Work" />
 							<div class="overlay">
@@ -473,6 +473,34 @@
 				</form>
 			</article>
 
+			<!-- Send jop application -->
+			<article id="jop">
+				<h2 class="major">Jop application</h2>
+
+				<form action="mailto:mahmoudegh8@gmail.com" method="POST" enctype="multipart/form-data">
+					<label class="mb-2" for="managerName">Manager Name</label>
+					<input class="mb-4" type="text" id="managerName" name="managerName" required>
+					<label class="mb-2" for="companyName">Company Name</label>
+					<input class="mb-4" type="text" id="companyName" name="companyName" required>
+					<label class="mb-2" for="emailTo">Company Email</label>
+					<input class="mb-4" type="email" id="emailTo" name="emailTo" required>
+					<button class="w-100 mt-4" type="submit">Send Email</button>
+				  </form>
+			</article>
+
+			<!-- Direct download resume -->
+			<article id="resume">
+				<h2 class="major">Download Resume</h2>
+
+				<iframe src="./cv/mahmoud_galal_frontend_web_developer_cv.pdf" 
+          width="100%" 
+          height="500px" 
+          title="Mahmoud Galal Resume">
+  </iframe>
+  <a class="direct-download-link d-inline-flex mt-3" href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
+				download="mahmoud_galal_frontend_web_developer_cv.pdf" target="_blank">Download My Resume</a>
+			</article>
+
 			<!-- Elements -->
 			<article id="elements" class="target">
 				<h2 class="major">Certificate</h2>
@@ -521,6 +549,53 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		// JavaScript code to automatically create the subject and body of the email
+		document.querySelector("form").addEventListener("submit", function(event) {
+		  event.preventDefault();
+	
+		  const managerName = document.getElementById("managerName").value;
+		  const companyName = document.getElementById("companyName").value;
+		  const emailTo = document.getElementById("emailTo").value;
+	
+		  const subject = "Application for Frontend Web Developer Position";
+		  const body = `
+Hello ${managerName},
+	  
+I hope this message finds you well. My name is Mahmoud Galal, and I’m reaching out to express my interest in the Frontend Web Developer position at ${companyName}. With over 4 years of experience in frontend development, I’m confident in my ability to contribute effectively to your team.
+	
+I’ve attached my resume to this email, and you can also download it directly here: https://mahmoudegh.github.io/portfolio/#resume
+	
+You can view my portfolio and explore my recent work here: https://mahmoudegh.github.io/portfolio/#work
+	
+Please feel free to contact me directly using the details below if you have any questions or need further information. I look forward to the opportunity to discuss how my experience and skills align with your team’s goals.
+	
+Contact Information:
+===================
+Name: Mahmoud Galal Hussein
+Phone: +201020242590
+Email: mahmoudegh8@gmail.com
+Location: Asyut, Egypt
+	  
+Thank you for considering my application. I look forward to your response.
+	
+Best regards,
+Mahmoud Galal
+	`;
+	
+		const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+		window.location.href = mailtoLink;
+	});
+	  </script>
+	  <script>
+		document.addEventListener('DOMContentLoaded', () => {
+		  // Check if the URL hash is '#resume'
+		  if (window.location.hash === '#resume') {
+			// Redirect to the resume download link
+			window.location.href = 'https://mahmoudegh.github.io/portfolio/cv/mahmoud_galal_frontend_web_developer_cv.pdf';
+		  }
+		});
+	  </script>
 </body>
 
 </html>
