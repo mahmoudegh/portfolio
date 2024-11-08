@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Sections -->
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/#intro</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/#work</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/#skills</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/#certificates</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/#contact</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/#resume</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CV page -->
+  <url>
+    <loc>https://mahmoudegh.github.io/portfolio/cv/mahmoud_galal_frontend_web_developer_cv.pdf</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
