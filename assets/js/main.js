@@ -432,7 +432,7 @@ let allSkills = document.querySelectorAll(".skills .skill-box .skill-progress sp
 
 // Control skills on hash change
 window.addEventListener("hashchange", function () {
-  if (location.hash === "#about") {
+  if (location.hash === "#skills") {
     allSkills.forEach((skill) => {
       skill.style.width = 0;
     });

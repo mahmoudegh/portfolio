@@ -1,641 +1,1227 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Mahmoud Galal - Frontend Web Developer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
 
-<head>
-	<title>Mahmoud Galal - Frontend Web Developer</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property="og:title" content="Mahmoud Galal - Frontend Web Developer">
-	<meta property="og:description"
-		content="Explore Mahmoud Galal's portfolio, a frontend web developer skilled in Vue, Nuxt, JavaScript, HTML, CSS, and Bootstrap. Discover innovative projects, efficient UI solutions, and a passion for delivering dynamic, responsive web applications.">
-	<meta property="og:image" content="https://mahmoudegh.github.io/portfolio/images/bg.jpg">
-	<meta property="og:url" content="https://mahmoudegh.github.io/portfolio/">
-	<meta property="og:type" content="website">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="icon" href="./images/favicon.ico">
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-</head>
+    <!-- Primary Meta Tags -->
+    <meta
+      name="description"
+      content="Mahmoud Galal's portfolio showcases a frontend developer skilled in Vue, Nuxt, JavaScript, HTML, CSS, and Bootstrap, dedicated to creating innovative, dynamic, and responsive web applications."
+    />
+    <meta
+      name="keywords"
+      content="Mahmoud Galal, frontend developer, Vue, Nuxt, JavaScript, HTML, CSS, Bootstrap, web development portfolio"
+    />
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-195Q3VQ69H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta
+      property="og:title"
+      content="Mahmoud Galal - Frontend Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore Mahmoud Galal's portfolio, showcasing innovative frontend development with Vue, Nuxt, JavaScript, and more."
+    />
+    <meta
+      property="og:image"
+      content="https://mahmoudegh.github.io/portfolio/images/bg.jpg"
+    />
+    <meta property="og:url" content="https://mahmoudegh.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
 
-  gtag('config', 'G-195Q3VQ69H');
-</script>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mahmoud Galal - Frontend Web Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Frontend web developer portfolio by Mahmoud Galal, showcasing skills in Vue, Nuxt, JavaScript, HTML, CSS, and Bootstrap."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mahmoudegh.github.io/portfolio/images/bg.jpg"
+    />
+    <meta name="twitter:site" content="@YourTwitterHandle" />
+    <!-- Replace with your Twitter handle if available -->
 
-<body class="is-preload">
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mahmoud Galal",
+        "jobTitle": "Frontend Web Developer",
+        "url": "https://mahmoudegh.github.io/portfolio/",
+        "image": "https://mahmoudegh.github.io/portfolio/images/profile-picture.jpeg",
+        "description": "Experienced Frontend Web Developer specializing in JavaScript, Vue, Nuxt, and responsive UI/UX design.",
+        "email": "mahmoudegh8@gmail.com",
+        "telephone": "+201020242590",
+        "sameAs": [
+          "https://www.linkedin.com/in/mahmoud-galal-313542212",
+          "https://github.com/mahmoudegh"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance (Remote)",
+          "jobLocation": {
+            "@type": "Place",
+            "name": "Remote"
+          }
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Assiut University",
+          "sameAs": "https://www.aun.edu.eg/"
+        },
+        "knowsAbout": [
+          "JavaScript",
+          "Vue",
+          "Nuxt",
+          "CSS",
+          "HTML",
+          "Bootstrap",
+          "SCSS",
+          "Tailwind CSS",
+          "Responsive Web Design",
+          "Frontend Development",
+          "RESTful APIs",
+          "Vuetify",
+          "Axios"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "HTML Fundamentals Certificate",
+            "url": "https://www.sololearn.com/Certificate/1014-11995964/jpg/",
+            "description": "HTML Fundamentals Certificate from SoloLearn"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CSS Fundamentals Certificate",
+            "url": "https://www.sololearn.com/Certificate/1023-11995964/jpg/",
+            "description": "CSS Fundamentals Certificate from SoloLearn"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "JavaScript Programming Certificate",
+            "url": "https://www.sololearn.com/certificates/course/en/11995964/1024/landscape/png",
+            "description": "JavaScript Programming Certificate from SoloLearn"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Frontend Web Development Challenger Track Certificate",
+            "url": "https://www.udacity.com/certificate/e/6399bc14-d3f8-11eb-a390-5fb1610b7c4d",
+            "description": "Udacity Frontend Web Development Challenger Track Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Frontend Web Development Professional Track Certificate",
+            "url": "https://www.udacity.com/certificate/e/cba37c26-a826-11eb-9b21-872ff4746dfc",
+            "description": "Udacity Frontend Web Development Professional Track Certificate"
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "JavaScript Basics Certificate",
+            "url": "https://www.hackerrank.com/certificates/325314a723ac",
+            "description": "JavaScript Basics Certificate from HackerRank"
+          }
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Frontend Developer",
+          "description": "Creating user-friendly web applications and enhancing frontend performance.",
+          "skills": [
+            "JavaScript",
+            "Vue",
+            "Nuxt",
+            "CSS",
+            "HTML",
+            "Bootstrap",
+            "Tailwind",
+            "JavaScript"
+          ]
+        },
+        "affiliation": [
+          {
+            "@type": "Organization",
+            "name": "Udacity",
+            "sameAs": "https://www.udacity.com/"
+          },
+          {
+            "@type": "Organization",
+            "name": "HackerRank",
+            "sameAs": "https://www.hackerrank.com/"
+          },
+          {
+            "@type": "Organization",
+            "name": "SoloLearn",
+            "sameAs": "https://www.sololearn.com/"
+          }
+        ],
+        "award": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "HTML Fundamentals Certificate",
+            "url": "https://www.sololearn.com/Certificate/1014-11995964/jpg/",
+            "description": "HTML Fundamentals Certificate from SoloLearn",
+            "awardingBody": {
+              "@type": "Organization",
+              "name": "SoloLearn",
+              "sameAs": "https://www.sololearn.com/"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "CSS Fundamentals Certificate",
+            "url": "https://www.sololearn.com/Certificate/1023-11995964/jpg/",
+            "description": "CSS Fundamentals Certificate from SoloLearn",
+            "awardingBody": {
+              "@type": "Organization",
+              "name": "SoloLearn",
+              "sameAs": "https://www.sololearn.com/"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "JavaScript Programming Certificate",
+            "url": "https://www.sololearn.com/certificates/course/en/11995964/1024/landscape/png",
+            "description": "JavaScript Programming Certificate from SoloLearn",
+            "awardingBody": {
+              "@type": "Organization",
+              "name": "SoloLearn",
+              "sameAs": "https://www.sololearn.com/"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Frontend Web Development Challenger Track Certificate",
+            "url": "https://www.udacity.com/certificate/e/6399bc14-d3f8-11eb-a390-5fb1610b7c4d",
+            "description": "Udacity Frontend Web Development Challenger Track Certificate",
+            "awardingBody": {
+              "@type": "Organization",
+              "name": "Udacity",
+              "sameAs": "https://www.udacity.com/"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Frontend Web Development Professional Track Certificate",
+            "url": "https://www.udacity.com/certificate/e/cba37c26-a826-11eb-9b21-872ff4746dfc",
+            "description": "Udacity Frontend Web Development Professional Track Certificate",
+            "awardingBody": {
+              "@type": "Organization",
+              "name": "Udacity",
+              "sameAs": "https://www.udacity.com/"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "JavaScript Basics Certificate",
+            "url": "https://www.hackerrank.com/certificates/325314a723ac",
+            "description": "JavaScript Basics Certificate from HackerRank",
+            "awardingBody": {
+              "@type": "Organization",
+              "name": "HackerRank",
+              "sameAs": "https://www.hackerrank.com/"
+            }
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Assiut",
+          "addressCountry": "EG"
+        },
+        "worksOnProject": [
+          {
+            "@type": "CreativeWork",
+            "name": "Gradient Generator",
+            "url": "https://mahmoudegh.github.io/Gradient-Generator/",
+            "description": "A web-based tool for generating CSS gradients."
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Quizz App",
+            "url": "https://mahmoudegh.github.io/Quizz-App/",
+            "description": "An interactive quiz application created with JavaScript."
+          }
+        ]
+      }
+    </script>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <!-- Favicon and CSS Links -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="./images/favicon.ico" />
 
-		<!-- Header -->
-		<header id="header">
-			<div class="logo">
-				<span>{&lt;/&gt;}</span>
-			</div>
-			<div class="content">
-				<div class="inner">
-					<img src="images/logo/04logo.png" alt="Logo">
-					<span class="image main mt-2">
-						<p class="logo-intro mb-0" data-text="Hi I'm Front-end Web Developer."></p>
-					</span>
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li class="work-link"><a href="#intro">Intro</a></li>
-					<li class="work-link"><a href="#work">Work</a></li>
-					<li class="work-link active-skills"><a href="#about">Skills</a></li>
-					<li class="work-link"><a href="#elements">Certificate</a></li>
-					<li><a href="#contact">Contact</a></li>
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+  </head>
 
-				</ul>
-			</nav>
+  <!-- <head>
+    <title>Mahmoud Galal - Frontend Web Developer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      property="og:title"
+      content="Mahmoud Galal - Frontend Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore Mahmoud Galal's portfolio, a frontend web developer skilled in Vue, Nuxt, JavaScript, HTML, CSS, and Bootstrap. Discover innovative projects, efficient UI solutions, and a passion for delivering dynamic, responsive web applications."
+    />
+    <meta
+      property="og:image"
+      content="https://mahmoudegh.github.io/portfolio/images/bg.jpg"
+    />
+    <meta property="og:url" content="https://mahmoudegh.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+  </head> -->
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-195Q3VQ69H"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-			<a class="direct-download-link" href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
-				download="mahmoud_galal_frontend_web_developer_cv.pdf" target="_blank">Download My Resume</a>
+    gtag("config", "G-195Q3VQ69H");
+  </script>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <h1 style="display: none">
+        Mahmoud Galal - Frontend Web Developer specializing in Vue.js, Nuxt.js,
+        JavaScript, HTML, CSS, Bootstrap, Tailwind, Git, RESTful Api, and
+        responsive design
+      </h1>
 
-
-
-		</header>
-
-
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- Intro -->
-			<article id="intro" class="target">
-				<h2 class="major">Intro</h2>
-				<span class="image main">
-					<p data-text="Hello, I'm Mahmoud Galal, I'm Front-end Web Developer."></p>
-				</span>
-				<p class="intro-para">I have an experience in dealing with programming and modern web technologies, and
-					I have built a lot of projects that have increased my experience and trained a lot, I am a fast
-					learner and always love to develop myself.</p>
-				<a href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
-					download="mahmoud_galal_frontend_web_developer_cv.pdf" target="_blank">My Resume</a>
-			</article>
-
-			<!-- Work -->
-			<article id="work" class="target">
-				<h2 class="major">Work</h2>
-				<span class="image main">
-					<p data-text="Productivity is being able to do things that you were never able to do before."></p>
-				</span>
-				<div class="featured-work text-center">
-					<div class="featured-work-header">
-						<div class="container">
-							<ul>
-								<li data-class="all" class="active list-unstyled uppercase hvr-grow">All Projects</li>
-								<li data-class=".completed" class="list-unstyled uppercase hvr-grow">Completed Projects
-								</li>
-								<li data-class=".development" class="list-unstyled uppercase hvr-grow">Projects Under
-									Development</li>
-								<li data-class=".practice-projects" class="list-unstyled uppercase hvr-grow">Practice
-									Projects</li>
-								<ul>
-						</div>
-					</div>
-					<div class="featured-work-items">
-
-						<div class="shuffel item-1">
-							<img class="completed img-responsive" src="images/works/01.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Hyundai</h3>
-									<a href="https://hyundaijordan.com/en" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-						<div class="shuffel item-2">
-							<img class="completed img-responsive" src="images/works/02.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Payit</h3>
-									<a href="https://letsgo.payit.ae/en/letsgocard" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-						<!-- <div class="shuffel item-3">
-							<img class="completed img-responsive" src="images/works/03.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Egy maps</h3>
-									<a href="https://egy-maps.com/ar" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div> -->
-						<div class="shuffel item-4">
-							<img class="completed img-responsive" src="images/works/04.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Tijara</h3>
-									<a href="https://www.tijara.me/" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-
-
-						<div class="shuffel item-5">
-							<img class="completed img-responsive" src="images/works/05.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Book keeping</h3>
-									<a href="https://bookkeeping.stg.kandm.site/dashboards/main"
-										target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-						<div class="shuffel item-6">
-							<img class="completed img-responsive" src="images/works/06.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>K&M Taxes</h3>
-									<a href="https://kandm.dev.wedev.sbs/login" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-7">
-							<img class="development img-responsive" src="images/works/07.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Payit</h3>
-									<a href="https://pit.dev.ouija.dev/en" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-						<div class="shuffel item-8">
-							<img class="development img-responsive" src="images/works/08.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Bescutter</h3>
-									<a href="https://dev.bescutter.wedev.sbs/dashboards/main"
-										target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-						<div class="shuffel item-9">
-							<img class="development img-responsive" src="images/works/09.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>In&Out Money</h3>
-									<a href="https://inandout.money/" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-						<div class="shuffel item-10">
-							<img class="development img-responsive" src="images/works/10.jpeg" alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>FAN</h3>
-									<a href="https://fan-network.dev.wedev.sbs/" target="_blank">Preview</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-11">
-							<img class="practice-projects img-responsive" src="images/works/11.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>HTML-CSS-Js-temp</h3>
-									<div>
-										<a href="https://mahmoudegh.github.io/HTML-CSS-JS-Temp/"
-											target="_blank">Preview</a>
-										<span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/HTML-CSS-JS-Temp"
-											target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-12">
-							<img class="practice-projects img-responsive" src="images/works/12.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Bootstrap-4 Temp</h3>
-									<div><a href="https://mahmoudegh.github.io/Bootstrap-4/" target="_blank">Preview</a>
-										<span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/Bootstrap-4" target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-13">
-							<img class="practice-projects img-responsive" src="images/works/13.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Bootstrap-3 Temp</h3>
-									<div><a href="https://mahmoudegh.github.io/Bootstrap-3/" target="_blank">Preview</a>
-										<span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/Bootstrap-3" target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-14">
-							<img class="practice-projects img-responsive" src="images/works/14.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>HTML - CSS - Temp</h3>
-									<div><a href="https://mahmoudegh.github.io/HTML-CSS-Temp/"
-											target="_blank">Preview</a> <span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/HTML-CSS-Temp" target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-15">
-							<img class="practice-projects img-responsive" src="images/works/15.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>To Do List</h3>
-									<div><a href="https://mahmoudegh.github.io/To-Do-List/" target="_blank">Preview</a>
-										<span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/To-Do-List" target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-16">
-							<img class="practice-projects img-responsive" src="images/works/16.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Fetch Github Ripos</h3>
-									<div>
-										<a href="https://mahmoudegh.github.io/Fetch-github-ripos"
-											target="_blank">Preview</a> <span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/Fetch-github-ripos"
-											target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-17">
-							<img class="practice-projects img-responsive" src="images/works/17.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Gradient Generator</h3>
-									<div><a href="https://mahmoudegh.github.io/Gradient-Generator/"
-											target="_blank">Preview</a> <span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/Gradient-Generator"
-											target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-18">
-							<img class="practice-projects img-responsive" src="images/works/18.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Control Local Storage</h3>
-									<div><a href="https://mahmoudegh.github.io/Control-Local-Storage/"
-											target="_blank">Preview</a> <span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/Control-Local-Storage"
-											target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-19">
-							<img class="practice-projects img-responsive" src="images/works/19.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>To Do List By Vue</h3>
-									<div><a href="https://mahmoudegh.github.io/To-Do-List-By-Vue/"
-											target="_blank">Preview</a> <span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/To-Do-List-By-Vue"
-											target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="shuffel item-20">
-							<img class="practice-projects img-responsive" src="images/works/20.jpeg"
-								alt="Featured Work" />
-							<div class="overlay">
-								<div class="title uppercase">
-									<h3>Quizz App</h3>
-									<div>
-										<a href="https://mahmoudegh.github.io/Quizz-App/" target="_blank">Preview</a>
-										<span class="ml-2 mr-2">|</span>
-										<a href="https://github.com/mahmoudegh/Quizz-App" target="_blank">Code</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-
-			<!-- About -->
-			<article id="about" class="target">
-				<h2 class="major">Skills</h2>
-				<span class="image main">
-					<p data-text="Schooling doesn't assure employment but skill does."></p>
-				</span>
-				<!-- Start our skills -->
-				<div class="skills">
-					<div class="container">
-						<div class="skill-box">
-							<div class="skill-name">Vue</div>
-							<div class="skill-progress">
-								<span data-progress="90%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">Nuxt</div>
-							<div class="skill-progress">
-								<span data-progress="95%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">JavaScript</div>
-							<div class="skill-progress">
-								<span data-progress="90%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">RESTful API</div>
-							<div class="skill-progress">
-								<span data-progress="88%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">Bootstrap</div>
-							<div class="skill-progress">
-								<span data-progress="90%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">Tailwind</div>
-							<div class="skill-progress">
-								<span data-progress="70%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">HTML</div>
-							<div class="skill-progress">
-								<span data-progress="85%"></span>
-							</div>
-						</div>
-						<div class="skill-box">
-							<div class="skill-name">CSS</div>
-							<div class="skill-progress">
-								<span data-progress="80%"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End our skills -->
-			</article>
-
-			<!-- Contact -->
-			<article id="contact">
-				<h2 class="major">Contact</h2>
-
-				<div 
-					class="contact-section">
-					<!-- <div class="row clearfix">
-										<div class="col-md-5 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label class="form-label">Name</label>
-												<input type="text" value="" placeholder="Enter Your Name"  name="name" required disabled>
-											</div>
-											<div class="form-group">
-												<label class="form-label">Email</label>
-												<input type="email" value="" placeholder="Enter Your Email Address" name="email" required disabled>
-											</div>
-											<div class="form-group">
-												<label class="form-label">Phone</label>
-												<input type="tel" value="" placeholder="Contact Number" name="phone" disabled>
-											</div>
-											<div class="clearfix"></div>
-
-										</div>
-										<div class="col-md-7 col-sm-12 col-xs-12">
-											<div class="form-group">
-												<label class="form-label">Message</label>
-												<textarea name="message" placeholder="Type Message Here" required disabled></textarea>
-												<p>
-													<label for="exampleInputFile" class="upload-file">Upload File</label>
-													<input type="file" id="exampleInputFile" name="my_file" disabled>
-												</p>
-											</div>
-										</div>
-									</div> -->
-
-					<ul class="icons">
-						<!-- <li class="submit-btn">
-											<button type="submit"  class="submit-btn theme-btn dark-btn hvr-bounce-to-right" disabled>
-												<span class="fa fa-envelope"></span> Send Message </button>
-										</li> -->
-						<li class="my-mobile">
-
-							<a href="tel:01020242590" target="_blank"><i class="fas fa-mobile-alt"></i></a>
-
-							<!-- <a href="https://wa.me/+201020242590" target="_blank"><i class="fab fa-whatsapp"></i></a> -->
-							<a href="https://wa.me/+201020242590?text=https%3A%2F%2Fmahmoudegh.github.io%2Fportfolio%20I%20have%20checked%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank">
-								<i class="fab fa-whatsapp"></i>
-							  </a>
-
-							<span>01020242590</span>
-						</li>
-						<li class="my-email">
-							<i class="fas fa-envelope"></i>
-								<a href="mailto:mahmoudegh8@gmail.com?body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________" 
-   target="_blank">mahmoudegh8@gmail.com</a>
-
-
-						</li>
-						<div class="social-icons-container">
-							<!-- <li><a href="https://www.facebook.com/mahmoudegh" target="_blank"
-									class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/mahmoud-galal-313542212/" target="_blank"
-									class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/mahmoudegh" target="_blank"
-									class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</div>
-					</ul>
-				</div>
-			</article>
-
-			<!-- Send jop application -->
-			<article id="jop">
-				<h2 class="major">Jop application</h2>
-
-				<form action="mailto:mahmoudegh8@gmail.com" method="POST" enctype="multipart/form-data">
-					<label class="mb-2" for="managerName">Manager Name</label>
-					<input class="mb-4" type="text" id="managerName" name="managerName" required>
-					<label class="mb-2" for="companyName">Company Name</label>
-					<input class="mb-4" type="text" id="companyName" name="companyName" required>
-					<label class="mb-2" for="emailTo">Company Email</label>
-					<input class="mb-4" type="email" id="emailTo" name="emailTo" required>
-					<button class="w-100 mt-4" type="submit">Send Email</button>
-				  </form>
-			</article>
-
-			<!-- Direct download resume -->
-			<article id="resume">
-				<h2 class="major">Download Resume</h2>
-
-				<iframe src="./cv/mahmoud_galal_frontend_web_developer_cv.pdf" 
-          width="100%" 
-          height="500px" 
-          title="Mahmoud Galal Resume">
-  </iframe>
-  <a class="direct-download-link d-inline-flex mt-3" href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
-				download="mahmoud_galal_frontend_web_developer_cv.pdf" target="_blank">Download My Resume</a>
-			</article>
-
-			<!-- Elements -->
-			<article id="elements" class="target">
-				<h2 class="major">Certificate</h2>
-				<span class="image main">
-					<p
-						data-text="The humans need the certificates of education, but the knowledge needs no certification.">
-					</p>
-				</span>
-
-				<!-- ٍStart gallery -->
-				<div class="gallery">
-					<div class="container">
-						<div class="images-box">
-							<img src="images/certificates/html-certificate.jpg" alt="HTML Certificate"
-								data-link="https://www.sololearn.com/Certificate/1014-11995964/jpg/" />
-							<img src="images/certificates/css-certificate.jpg" alt="CSS Certificate"
-								data-link="https://www.sololearn.com/Certificate/1023-11995964/jpg/" />
-							<img src="images/certificates/javaScript-certificate.png" alt="javaScript Certificate"
-								data-link="https://www.sololearn.com/certificates/course/en/11995964/1024/landscape/png" />
-							<img src="images/certificates/Udacity-challenger-track.png" alt="Udacity Certificate"
-								data-link="https://www.udacity.com/certificate/e/6399bc14-d3f8-11eb-a390-5fb1610b7c4d" />
-							<img src="images/certificates/Udacity-professional-track.png" alt="Udacity Certificate"
-								data-link="https://www.udacity.com/certificate/e/cba37c26-a826-11eb-9b21-872ff4746dfc" />
-							<img src="images/certificates/hackerRank-javaScript-basics.png"
-								alt="HackerRank-javaScript-basics"
-								data-link="https://www.hackerrank.com/certificates/325314a723ac" />
-						</div>
-					</div>
-				</div>
-				<!-- End gallery -->
-			</article>
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer" class="mt-0 mt-sm-4">
-						<ul class="social-icons-container list-unstyled d-flex align-items-center justify-content-center m-0 p-0">
-							<li>
-								<a class="text-decoration-none border-0" href="https://wa.me/+201020242590?text=https%3A%2F%2Fmahmoudegh.github.io%2Fportfolio%20I%20have%20checked%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank">
-									<i class="fab fa-whatsapp"></i>
-								  </a>
-							</li>
-							<li>
-								<a class="text-decoration-none border-0" href="tel:01020242590" target="_blank"><i class="fas fa-mobile-alt"></i></a>
-							</li>
-							<li>
-								
-									<a class="text-decoration-none border-0" href="mailto:mahmoudegh8@gmail.com?body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________" 
-	   target="_blank"><i class="fas fa-envelope"></i></a>
-	
-	
-							</li>
-							<!-- <li><a href="https://www.facebook.com/mahmoudegh" target="_blank"
-									class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/mahmoud-galal-313542212/" target="_blank"
-									class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/mahmoudegh" target="_blank"
-									class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
-					</footer>
-	</div>
-
-	<!-- BG -->
-	<div id="bg"></div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script>
-		// JavaScript code to automatically create the subject and body of the email
-		document.querySelector("form").addEventListener("submit", function(event) {
-		  event.preventDefault();
-	
-		  const managerName = document.getElementById("managerName").value;
-		  const companyName = document.getElementById("companyName").value;
-		  const emailTo = document.getElementById("emailTo").value;
-	
-		  const subject = "Application for Frontend Web Developer Position";
-		  const body = `
+      <!-- Header -->
+      <header id="header">
+        <div class="logo">
+          <span>{&lt;/&gt;}</span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <img
+              src="images/logo/04logo.png"
+              alt="Mahmoud Galal's profile logo"
+            />
+            <span class="image main mt-2">
+              <p
+                class="logo-intro mb-0"
+                data-text="Hi I'm Front-end Web Developer."
+              ></p>
+            </span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li class="work-link">
+              <a aria-label="View Intro section" href="#intro">Intro</a>
+            </li>
+            <li class="work-link">
+              <a aria-label="View my works section" href="#work">Work</a>
+            </li>
+            <li class="work-link active-skills">
+              <a aria-label="View my skills section" href="#skills">Skills</a>
+            </li>
+            <li class="work-link">
+              <a aria-label="View my Certificates Section" href="#certificates"
+                >Certificate</a
+              >
+            </li>
+            <li>
+              <a aria-label="Go to contact section" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          aria-label="Download Mahmoud Galal's Resume"
+          class="direct-download-link"
+          href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
+          download="mahmoud_galal_frontend_web_developer_cv.pdf"
+          target="_blank"
+          >Download My Resume</a
+        >
+      </header>
+      <!-- Main -->
+      <div id="main">
+        <!-- Intro -->
+        <article id="intro" class="target">
+          <h2 class="major">Intro</h2>
+          <span class="image main">
+            <p
+              data-text="Hello, I'm Mahmoud Galal, I'm Front-end Web Developer."
+            ></p>
+          </span>
+          <p class="intro-para">
+            I have an experience in dealing with programming and modern web
+            technologies, and I have built a lot of projects that have increased
+            my experience and trained a lot, I am a fast learner and always love
+            to develop myself.
+          </p>
+          <a
+            href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
+            download="mahmoud_galal_frontend_web_developer_cv.pdf"
+            target="_blank"
+            aria-label="Download Mahmoud Galal's resume as a PDF"
+          >
+            My Resume
+          </a>
+        </article>
+        <!-- Work -->
+        <article id="work" class="target">
+          <h2 class="major">Work</h2>
+          <span class="image main">
+            <p
+              data-text="Productivity is being able to do things that you were never able to do before."
+            ></p>
+          </span>
+          <div class="featured-work text-center">
+            <div class="featured-work-header">
+              <div class="container">
+                <ul>
+                  <li
+                    data-class="all"
+                    class="active list-unstyled uppercase hvr-grow"
+                  >
+                    All Projects
+                  </li>
+                  <li
+                    data-class=".completed"
+                    class="list-unstyled uppercase hvr-grow"
+                  >
+                    Completed Projects
+                  </li>
+                  <li
+                    data-class=".development"
+                    class="list-unstyled uppercase hvr-grow"
+                  >
+                    Projects Under Development
+                  </li>
+                  <li
+                    data-class=".practice-projects"
+                    class="list-unstyled uppercase hvr-grow"
+                  >
+                    Practice Projects
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="featured-work-items">
+              <div class="shuffel item-1">
+                <img
+                  class="completed img-responsive"
+                  src="images/works/01.jpeg"
+                  alt="Screenshot of Project One - A Nuxt.js Application for Hyundai"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Hyundai</h3>
+                    <a
+                      aria-label="Preview Hyundai Jordan website"
+                      href="https://hyundaijordan.com/en"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-2">
+                <img
+                  class="completed img-responsive"
+                  src="images/works/02.jpeg"
+                  alt="Screenshot of Project Two - A Nuxt.js Application for Payit"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Payit</h3>
+                    <a
+                      aria-label="Preview Payit website"
+                      href="https://letsgo.payit.ae/en/letsgocard"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="shuffel item-3">
+                        <img class="completed img-responsive" src="images/works/03.jpeg" alt="Screenshot of Project Three - A Nuxt.js Application for Egymaps" />
+                        <div class="overlay">
+                        	<div class="title uppercase">
+                        		<h3>Egy maps</h3>
+                        		<a aria-label="Preview Egymaps website" href="https://egy-maps.com/ar" target="_blank">Preview</a>
+                        	</div>
+                        </div>
+                        </div> -->
+              <div class="shuffel item-4">
+                <img
+                  class="completed img-responsive"
+                  src="images/works/04.jpeg"
+                  alt="Screenshot of Project Four - A Nuxt.js Application for Tijara"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Tijara</h3>
+                    <a
+                      aria-label="Preview Tijara website"
+                      href="https://www.tijara.me/"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-5">
+                <img
+                  class="completed img-responsive"
+                  src="images/works/05.jpeg"
+                  alt="Screenshot of Project Five - A Nova Dashboard"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Book keeping</h3>
+                    <a
+                      aria-label="Preview Bookkeeping website"
+                      href="https://bookkeeping.stg.kandm.site/dashboards/main"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-6">
+                <img
+                  class="completed img-responsive"
+                  src="images/works/06.jpeg"
+                  alt="Screenshot of Project Six - A Nova Dashboard"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>K&M Taxes</h3>
+                    <a
+                      aria-label="Preview K&M Taxes website"
+                      href="https://kandm.dev.wedev.sbs/login"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-7">
+                <img
+                  class="development img-responsive"
+                  src="images/works/07.jpeg"
+                  alt="Screenshot of Project Seven - A Nuxt.js Application for Payit"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Payit</h3>
+                    <a
+                      aria-label="Preview Payit website"
+                      href="https://pit.dev.ouija.dev/en"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-8">
+                <img
+                  class="development img-responsive"
+                  src="images/works/08.jpeg"
+                  alt="Screenshot of Project Eight - A Nova Dashboard"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Bescutter</h3>
+                    <a
+                      aria-label="Preview Bescutter website"
+                      href="https://dev.bescutter.wedev.sbs/dashboards/main"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-9">
+                <img
+                  class="development img-responsive"
+                  src="images/works/09.jpeg"
+                  alt="Screenshot of Project Nine - A Nuxt.js Application for In&Out Money"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>In&Out Money</h3>
+                    <a
+                      aria-label="Preview In&out Money website"
+                      href="https://inandout.money/"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-10">
+                <img
+                  class="development img-responsive"
+                  src="images/works/10.jpeg"
+                  alt="Screenshot of Project Ten - A Nuxt.js Application for FAN network"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>FAN</h3>
+                    <a
+                      aria-label="Preview Fan Network website"
+                      href="https://fan-network.dev.wedev.sbs/"
+                      target="_blank"
+                      >Preview</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-11">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/11.jpeg"
+                  alt="Screenshot of Project Eleven - HTML, CSS and Js Template"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>HTML-CSS-Js Template</h3>
+                    <div>
+                      <a
+                        aria-label="Preview HTML-CSS-Js Template"
+                        href="https://mahmoudegh.github.io/HTML-CSS-JS-Temp/"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for HTML, CSS, and JavaScript template on GitHub"
+                        href="https://github.com/mahmoudegh/HTML-CSS-JS-Temp"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-12">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/12.jpeg"
+                  alt="Screenshot of Project Twelve - Bootstrap Template"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Bootstrap-4 Template</h3>
+                    <div>
+                      <a
+                        aria-label="Preview Bootstrap Template"
+                        href="https://mahmoudegh.github.io/Bootstrap-4/"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for Bootstrap template on GitHub"
+                        href="https://github.com/mahmoudegh/Bootstrap-4"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-13">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/13.jpeg"
+                  alt="Screenshot of Project Thirteen - Bootstrap Template"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Bootstrap-3 Template</h3>
+                    <div>
+                      <a
+                        aria-label="Preview Bootstrap Template"
+                        href="https://mahmoudegh.github.io/Bootstrap-3/"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for Bootstrap template on GitHub"
+                        href="https://github.com/mahmoudegh/Bootstrap-3"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-14">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/14.jpeg"
+                  alt="Screenshot of Project Fourteen - HTML - CSS Template"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>HTML - CSS Template</h3>
+                    <div>
+                      <a
+                        aria-label="Preview HTML - CSS Template"
+                        href="https://mahmoudegh.github.io/HTML-CSS-Temp/"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for HTML - CSS template on GitHub"
+                        href="https://github.com/mahmoudegh/HTML-CSS-Temp"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-15">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/15.jpeg"
+                  alt="Screenshot of Project Fiveteen - JavaScript To Do List"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>To Do List</h3>
+                    <div>
+                      <a
+                        aria-label="Preview JavaScript To Do List app"
+                        href="https://mahmoudegh.github.io/To-Do-List/"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for JavaScript To Do List app on GitHub"
+                        href="https://github.com/mahmoudegh/To-Do-List"
+                        target="_blank"
+                        >Code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-16">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/16.jpeg"
+                  alt="Screenshot of Project Sixteen - JavaScript app to Fetch Github Ripos"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Fetch Github Ripos</h3>
+                    <div>
+                      <a
+                        aria-label="Preview Fetch GitHub Repositories project"
+                        href="https://mahmoudegh.github.io/Fetch-github-ripos"
+                        target="_blank"
+                        >Preview</a
+                      >
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for Fetch GitHub Repositories project on GitHub"
+                        href="https://github.com/mahmoudegh/Fetch-github-ripos"
+                        target="_blank"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-17">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/17.jpeg"
+                  alt="Screenshot of Project Seventeen - Vue.js app Gradient Generator"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Gradient Generator</h3>
+                    <div>
+                      <a
+                        aria-label="Preview Gradient Generator project"
+                        href="https://mahmoudegh.github.io/Gradient-Generator/"
+                        target="_blank"
+                      >
+                        Preview
+                      </a>
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for Gradient Generator project on GitHub"
+                        href="https://github.com/mahmoudegh/Gradient-Generator"
+                        target="_blank"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-18">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/18.jpeg"
+                  alt="Screenshot of Project Eighteen - JavaScript app to Control Local Storage"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Control Local Storage</h3>
+                    <div>
+                      <a
+                        aria-label="Preview Control Local Storage project"
+                        href="https://mahmoudegh.github.io/Control-Local-Storage/"
+                        target="_blank"
+                      >
+                        Preview
+                      </a>
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for Control Local Storage project on GitHub"
+                        href="https://github.com/mahmoudegh/Control-Local-Storage"
+                        target="_blank"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-19">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/19.jpeg"
+                  alt="Screenshot of Project Nineteen - Vue.js To Do List"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>To Do List By Vue</h3>
+                    <div>
+                      <a
+                        aria-label="Preview To-Do List by Vue project"
+                        href="https://mahmoudegh.github.io/To-Do-List-By-Vue/"
+                        target="_blank"
+                      >
+                        Preview
+                      </a>
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for To-Do List by Vue project on GitHub"
+                        href="https://github.com/mahmoudegh/To-Do-List-By-Vue"
+                        target="_blank"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="shuffel item-20">
+                <img
+                  class="practice-projects img-responsive"
+                  src="images/works/20.jpeg"
+                  alt="Screenshot of Project Twenty - Vue.js Quizz App"
+                />
+                <div class="overlay">
+                  <div class="title uppercase">
+                    <h3>Quizz App</h3>
+                    <div>
+                      <a
+                        aria-label="Preview Quizz App project"
+                        href="https://mahmoudegh.github.io/Quizz-App/"
+                        target="_blank"
+                      >
+                        Preview
+                      </a>
+                      <span class="ml-2 mr-2">|</span>
+                      <a
+                        aria-label="View code for Quizz App project on GitHub"
+                        href="https://github.com/mahmoudegh/Quizz-App"
+                        target="_blank"
+                      >
+                        Code
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Skills -->
+        <article id="skills" class="target">
+          <h2 class="major">Skills</h2>
+          <span class="image main">
+            <p
+              data-text="Schooling doesn't assure employment but skill does."
+            ></p>
+          </span>
+          <!-- Start our skills -->
+          <div class="skills">
+            <div class="container">
+              <div class="skill-box">
+                <div class="skill-name">Vue</div>
+                <div class="skill-progress">
+                  <span data-progress="90%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">Nuxt</div>
+                <div class="skill-progress">
+                  <span data-progress="95%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-progress">
+                  <span data-progress="90%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">RESTful API</div>
+                <div class="skill-progress">
+                  <span data-progress="88%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">Bootstrap</div>
+                <div class="skill-progress">
+                  <span data-progress="90%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">Tailwind</div>
+                <div class="skill-progress">
+                  <span data-progress="70%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="skill-progress">
+                  <span data-progress="85%"></span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                  <span data-progress="80%"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End our skills -->
+        </article>
+        <!-- Contact -->
+        <article id="contact">
+          <h2 class="major">Contact</h2>
+          <div class="contact-section">
+            <ul class="icons">
+              <li class="my-mobile">
+                <a
+                  href="tel:01020242590"
+                  target="_blank"
+                  aria-label="Call Mahmoud Galal at 01020242590"
+                >
+                  <i class="fas fa-mobile-alt"></i>
+                </a>
+                <a
+                  href="https://wa.me/+201020242590?text=https%3A%2F%2Fmahmoudegh.github.io%2Fportfolio%20I%20have%20checked%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch."
+                  target="_blank"
+                  aria-label="Message Mahmoud Galal on WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <span>01020242590</span>
+              </li>
+              <li class="my-email">
+                <i class="fas fa-envelope"></i>
+                <a
+                  aria-label="Send an email to Mahmoud Galal at mahmoudegh8@gmail.com"
+                  href="mailto:mahmoudegh8@gmail.com?body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________"
+                  target="_blank"
+                >
+                  mahmoudegh8@gmail.com
+                </a>
+              </li>
+              <div class="social-icons-container">
+                <li>
+                  <a
+                    aria-label="Visit Mahmoud Galal's LinkedIn profile"
+                    href="https://www.linkedin.com/in/mahmoud-galal-313542212/"
+                    target="_blank"
+                    class="icon brands fa-linkedin"
+                  >
+                    <span class="label">LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    aria-label="Visit Mahmoud Galal's GitHub profile"
+                    href="https://github.com/mahmoudegh"
+                    target="_blank"
+                    class="icon brands fa-github"
+                  >
+                    <span class="label">GitHub</span>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </article>
+        <!-- Send jop application -->
+        <article id="jop">
+          <h2 class="major">Jop application</h2>
+          <form
+            action="mailto:mahmoudegh8@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label class="mb-2" for="managerName">Manager Name</label>
+            <input
+              class="mb-4"
+              type="text"
+              id="managerName"
+              name="managerName"
+              required
+            />
+            <label class="mb-2" for="companyName">Company Name</label>
+            <input
+              class="mb-4"
+              type="text"
+              id="companyName"
+              name="companyName"
+              required
+            />
+            <label class="mb-2" for="emailTo">Company Email</label>
+            <input
+              class="mb-4"
+              type="email"
+              id="emailTo"
+              name="emailTo"
+              required
+            />
+            <button aria-label="Send Email" class="w-100 mt-4" type="submit">
+              Send Email
+            </button>
+          </form>
+        </article>
+        <!-- Direct download resume -->
+        <article id="resume">
+          <h2 class="major">Download Resume</h2>
+          <iframe
+            src="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
+            width="100%"
+            height="500px"
+            title="Mahmoud Galal Resume"
+          >
+          </iframe>
+          <a
+            aria-label="Download Mahmoud Galal's Frontend Web Developer CV"
+            class="direct-download-link d-inline-flex mt-3"
+            href="./cv/mahmoud_galal_frontend_web_developer_cv.pdf"
+            download="mahmoud_galal_frontend_web_developer_cv.pdf"
+            target="_blank"
+          >
+            Download My Resume
+          </a>
+        </article>
+        <!-- Certificates -->
+        <article id="certificates" class="target">
+          <h2 class="major">Certificate</h2>
+          <span class="image main">
+            <p
+              data-text="The humans need the certificates of education, but the knowledge needs no certification."
+            ></p>
+          </span>
+          <!-- ٍStart gallery -->
+          <div class="gallery">
+            <div class="container">
+              <div class="images-box">
+                <img
+                  src="images/certificates/html-certificate.jpg"
+                  alt="HTML Fundamentals Certificate from SoloLearn"
+                  data-link="https://www.sololearn.com/Certificate/1014-11995964/jpg/"
+                />
+                <img
+                  src="images/certificates/css-certificate.jpg"
+                  alt="CSS Fundamentals Certificate from SoloLearn"
+                  data-link="https://www.sololearn.com/Certificate/1023-11995964/jpg/"
+                />
+                <img
+                  src="images/certificates/javaScript-certificate.png"
+                  alt="JavaScript Programming Certificate from SoloLearn"
+                  data-link="https://www.sololearn.com/certificates/course/en/11995964/1024/landscape/png"
+                />
+                <img
+                  src="images/certificates/Udacity-challenger-track.png"
+                  alt="Udacity Frontend Web Development Challenger Track Certificate"
+                  data-link="https://www.udacity.com/certificate/e/6399bc14-d3f8-11eb-a390-5fb1610b7c4d"
+                />
+                <img
+                  src="images/certificates/Udacity-professional-track.png"
+                  alt="Udacity Frontend Web Development Professional Track Certificate"
+                  data-link="https://www.udacity.com/certificate/e/cba37c26-a826-11eb-9b21-872ff4746dfc"
+                />
+                <img
+                  src="images/certificates/hackerRank-javaScript-basics.png"
+                  alt="JavaScript Basics Certificate from HackerRank"
+                  data-link="https://www.hackerrank.com/certificates/325314a723ac"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- End gallery -->
+        </article>
+      </div>
+      <!-- Footer -->
+      <footer id="footer" class="mt-0 mt-sm-4">
+        <ul
+          class="social-icons-container list-unstyled d-flex align-items-center justify-content-center m-0 p-0"
+        >
+          <li>
+            <a
+              aria-label="Contact Mahmoud Galal on WhatsApp"
+              class="text-decoration-none border-0"
+              href="https://wa.me/+201020242590?text=https%3A%2F%2Fmahmoudegh.github.io%2Fportfolio%20I%20have%20checked%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch."
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="Call Mahmoud Galal"
+              class="text-decoration-none border-0"
+              href="tel:01020242590"
+              target="_blank"
+            >
+              <i class="fas fa-mobile-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="Email Mahmoud Galal"
+              class="text-decoration-none border-0"
+              href="mailto:mahmoudegh8@gmail.com?body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________"
+              target="_blank"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="Visit Mahmoud Galal's LinkedIn Profile"
+              href="https://www.linkedin.com/in/mahmoud-galal-313542212/"
+              target="_blank"
+              class="icon brands fa-linkedin"
+            >
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="Visit Mahmoud Galal's GitHub Profile"
+              href="https://github.com/mahmoudegh"
+              target="_blank"
+              class="icon brands fa-github"
+            >
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- BG -->
+    <div id="bg"></div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      // JavaScript code to automatically create the subject and body of the email
+      document
+        .querySelector("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const managerName = document.getElementById("managerName").value;
+          const companyName = document.getElementById("companyName").value;
+          const emailTo = document.getElementById("emailTo").value;
+          const subject = "Application for Frontend Web Developer Position";
+          const body = `
 Hello ${managerName},
-	  
-I hope this message finds you well. My name is Mahmoud Galal, and I’m reaching out to express my interest in the Frontend Web Developer position at ${companyName}. With over 4 years of experience in frontend development, I’m confident in my ability to contribute effectively to your team.
-	
+          
+I hope this message finds you well. My name is Mahmoud Galal, and I’m reaching out to express my interest in the Frontend Web Developer position at ${companyName}. With over 3 years of experience in frontend development, I’m confident in my ability to contribute effectively to your team.
+         
 I’ve attached my resume to this email, and you can also download it directly here: https://mahmoudegh.github.io/portfolio/#resume
-	
+         
 You can view my portfolio and explore my recent work here: https://mahmoudegh.github.io/portfolio/#work
-	
+         
 Please feel free to contact me directly using the details below if you have any questions or need further information. I look forward to the opportunity to discuss how my experience and skills align with your team’s goals.
-	
+         
 Contact Information:
 ===================
 Name: Mahmoud Galal Hussein
 Phone: +201020242590
 Email: mahmoudegh8@gmail.com
 Location: Asyut, Egypt
-	  
+          
 Thank you for considering my application. I look forward to your response.
-	
+         
 Best regards,
 Mahmoud Galal
-	`;
-	
-		const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-		window.location.href = mailtoLink;
-	});
-	  </script>
-	  <script>
-		document.addEventListener('DOMContentLoaded', () => {
-		  // Check if the URL hash is '#resume'
-		  if (window.location.hash === '#resume') {
-			// Redirect to the resume download link
-			window.location.href = 'https://mahmoudegh.github.io/portfolio/cv/mahmoud_galal_frontend_web_developer_cv.pdf';
-		  }
-		});
-	  </script>
-</body>
+         `;
 
+          const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(
+            subject
+          )}&body=${encodeURIComponent(body)}`;
+          window.location.href = mailtoLink;
+        });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.location.hash === "#resume") {
+          window.location.href =
+            "https://mahmoudegh.github.io/portfolio/cv/mahmoud_galal_frontend_web_developer_cv.pdf";
+        }
+      });
+    </script>
+  </body>
 </html>
