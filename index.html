@@ -980,7 +980,6 @@
         <article id="jop">
           <h2 class="major">Jop application</h2>
           <form
-            action="mailto:mahmoudegh8@gmail.com"
             method="POST"
             enctype="multipart/form-data"
           >
@@ -1280,10 +1279,18 @@ Best regards,
 Mahmoud Galal
          `;
 
-          const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(
-            subject
-          )}&body=${encodeURIComponent(body)}`;
-          window.location.href = mailtoLink;
+          // const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(
+          //   subject
+          // )}&body=${encodeURIComponent(body)}`;
+          // window.location.href = mailtoLink;
+
+          const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+            emailTo
+          )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            body
+          )}`;
+
+          window.open(gmailLink, "_blank");
         });
     </script>
     <script>
