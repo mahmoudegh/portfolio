@@ -942,8 +942,9 @@
               <li class="my-email">
                 <i class="fas fa-envelope"></i>
                 <a
+                  class="dynamicEmailLink"
                   aria-label="Send an email to Mahmoud Galal at mahmoudegh8@gmail.com"
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=mahmoudegh8@gmail.com&su=Email%20via%20My%20Portfolio%20website&body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="mahmoudegh8@gmail.com"
@@ -1202,8 +1203,8 @@
           <li>
             <a
               aria-label="Email Mahmoud Galal"
-              class="text-decoration-none border-0"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=mahmoudegh8@gmail.com&su=Email%20via%20My%20Portfolio%20website&body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________"
+              class="dynamicEmailLink text-decoration-none border-0"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               title="mahmoudegh8@gmail.com"
@@ -1301,6 +1302,26 @@ Mahmoud Galal
           window.location.href =
             "https://mahmoudegh.github.io/portfolio/cv/mahmoud_galal_frontend_web_developer_cv.pdf";
         }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        var emailHref = "";
+        if (window.innerWidth < 768) {
+          emailHref =
+            "mailto:mahmoudegh8@gmail.com?subject=Email%20via%20My%20Portfolio%20website&body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________";
+        } else {
+          emailHref =
+            "https://mail.google.com/mail/?view=cm&fs=1&to=mahmoudegh8@gmail.com&su=Email%20via%20My%20Portfolio%20website&body=This%20email%20was%20sent%20via%20my%20portfolio%20website.%0D%0A%0D%0A_________________________%0D%0A%0D%0A_________________________";
+        }
+
+        // Select all elements with the class "emailLink"
+        const emailLinks = document.querySelectorAll(".dynamicEmailLink");
+
+        // Update the href attribute for each element
+        emailLinks.forEach((link) => {
+          link.href = emailHref;
+        });
       });
     </script>
   </body>
