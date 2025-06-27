@@ -979,10 +979,7 @@
         <!-- Send jop application -->
         <article id="jop">
           <h2 class="major">Jop application</h2>
-          <form
-            method="POST"
-            enctype="multipart/form-data"
-          >
+          <form method="POST" enctype="multipart/form-data">
             <label class="mb-2" for="managerName">Manager Name</label>
             <input
               class="mb-4"
@@ -1279,10 +1276,10 @@ Best regards,
 Mahmoud Galal
          `;
 
-          // const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(
-          //   subject
-          // )}&body=${encodeURIComponent(body)}`;
-          // window.location.href = mailtoLink;
+          const mailtoLink = `mailto:${emailTo}?subject=${encodeURIComponent(
+            subject
+          )}&body=${encodeURIComponent(body)}`;
+          window.location.href = mailtoLink;
 
           const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
             emailTo
@@ -1290,7 +1287,12 @@ Mahmoud Galal
             body
           )}`;
 
-          window.open(gmailLink, "_blank");
+          if (window.innerWidth < 768) {
+            // Simple check for mobile
+            window.open(mailtoLink, "_blank");
+          } else {
+            window.open(gmailLink, "_blank");
+          }
         });
     </script>
     <script>
