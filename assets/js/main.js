@@ -339,13 +339,16 @@
 // Featured Work Shuffle
 $(function () {
   "use strict";
-  $(".featured-work-header ul li").on("click", function () {
+  $(document).on("click", "#work .featured-work-header ul li", function () {
+    const $work = $("#work");
+    const selectedClass = $(this).data("class");
+
     $(this).addClass("active").siblings().removeClass("active");
-    if ($(this).data("class") === "all") {
-      $(".featured-work-items .shuffel").css("display", "block");
+    if (selectedClass === "all") {
+      $work.find(".featured-work-items .shuffel").css("display", "block");
     } else {
-      $(".featured-work-items .shuffel").css("display", "none");
-      $($(this).data("class")).parent().css("display", "block");
+      $work.find(".featured-work-items .shuffel").css("display", "none");
+      $work.find(selectedClass).parent().css("display", "block");
     }
   });
 });
@@ -427,35 +430,34 @@ function typeWriterEffect() {
 ////////////////////////////////////////////////////////////////////////
 
 // Animate skills progress
-// Select variable
-let allSkills = document.querySelectorAll(".skills .skill-box .skill-progress span");
+function getSkills() {
+  return document.querySelectorAll(".skills .skill-box .skill-progress span");
+}
 
-// Control skills on hash change
+function setSkillsProgress(shouldAnimate) {
+  getSkills().forEach(function (skill) {
+    skill.style.width = shouldAnimate ? skill.dataset.progress : 0;
+  });
+}
+
+function animateSkillsProgress() {
+  setSkillsProgress(false);
+  setTimeout(function () {
+    setSkillsProgress(true);
+  }, 1000);
+}
+
 window.addEventListener("hashchange", function () {
-  if (location.hash === "#skills") {
-    allSkills.forEach((skill) => {
-      skill.style.width = 0;
-    });
-
-    allSkills.forEach((skill) => {
-      setTimeout(function () {
-        skill.style.width = skill.dataset.progress;
-      }, 1000);
-    });
-  } else {
-    allSkills.forEach((skill) => {
-      skill.style.width = 0;
-    });
-  }
+  if (location.hash === "#skills") animateSkillsProgress();
+  else setSkillsProgress(false);
 });
 
-// Control skills on load
 window.addEventListener("load", function () {
-  allSkills.forEach((skill) => {
-    setTimeout(function () {
-      skill.style.width = skill.dataset.progress;
-    }, 1000);
-  });
+  if (location.hash === "#skills" || !location.hash) animateSkillsProgress();
+});
+
+window.addEventListener("portfolio:data-loaded", function () {
+  if (location.hash === "#skills" || !location.hash) animateSkillsProgress();
 });
 /////////////////////////////////////////////////////////////
 

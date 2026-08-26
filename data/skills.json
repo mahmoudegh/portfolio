@@ -1,0 +1,12 @@
+{
+  "skills": [
+    { "name": "Vue", "progress": "90%" },
+    { "name": "Nuxt", "progress": "95%" },
+    { "name": "JavaScript", "progress": "90%" },
+    { "name": "RESTful API", "progress": "88%" },
+    { "name": "Bootstrap", "progress": "90%" },
+    { "name": "Tailwind", "progress": "70%" },
+    { "name": "HTML", "progress": "85%" },
+    { "name": "CSS", "progress": "80%" }
+  ]
+}
