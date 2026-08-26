@@ -32,4 +32,13 @@ Credits:
 
 Edit `data/work.json` or `data/skills.json` to update portfolio content. Each project and skill has a `published` key: set it to `false` to hide that item, or `true` to show it.
 
-The data files are valid JSON and are loaded with `fetch()`. Open the portfolio through a local web server (for example, `python3 -m http.server`) or deploy it over HTTP/HTTPS; browsers block requests to local JSON files when `index.html` is opened directly with `file://`.
+The data files are valid JSON and are loaded with `fetch()`. Browsers intentionally block `fetch()` requests to local files when `index.html` is opened directly with `file://`; this cannot be enabled by website JavaScript.
+
+### Run locally
+
+Do **not** double-click `index.html`. Start the included local server instead, then open the displayed address:
+
+- **Windows:** double-click `start-server.bat` (or run `start-server.bat` in Command Prompt). It opens `http://localhost:8000` automatically.
+- **macOS/Linux:** run `./start-server.sh`, then open `http://localhost:8000`.
+
+After changing either JSON file, refresh the browser page. The Work and Skills sections will immediately use the updated data.
