@@ -33,7 +33,8 @@ window.portfolioContentFallback = {
             "url": "https://hyundaijordan.com/en",
             "ariaLabel": "Preview Hyundai Jordan website"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 2,
@@ -48,7 +49,8 @@ window.portfolioContentFallback = {
             "url": "https://letsgo.payit.ae/en/letsgocard",
             "ariaLabel": "Preview Payit website"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 4,
@@ -63,7 +65,8 @@ window.portfolioContentFallback = {
             "url": "https://www.tijara.me/",
             "ariaLabel": "Preview Tijara website"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 7,
@@ -78,7 +81,8 @@ window.portfolioContentFallback = {
             "url": "https://payit.dev.wedev.sbs/en",
             "ariaLabel": "Preview Payit website"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 10,
@@ -93,7 +97,8 @@ window.portfolioContentFallback = {
             "url": "https://fan-network.dev.wedev.sbs/en/university-of-washington-athletics",
             "ariaLabel": "Preview Fan Network website"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 11,
@@ -113,7 +118,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/HTML-CSS-JS-Temp",
             "ariaLabel": "View code for HTML, CSS, and JavaScript template on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 12,
@@ -133,7 +139,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/Bootstrap-4",
             "ariaLabel": "View code for Bootstrap template on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 13,
@@ -153,7 +160,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/Bootstrap-3",
             "ariaLabel": "View code for Bootstrap template on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 14,
@@ -173,7 +181,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/HTML-CSS-Temp",
             "ariaLabel": "View code for HTML - CSS template on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 15,
@@ -193,7 +202,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/To-Do-List",
             "ariaLabel": "View code for JavaScript To Do List app on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 16,
@@ -213,7 +223,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/Fetch-github-ripos",
             "ariaLabel": "View code for Fetch GitHub Repositories project on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 17,
@@ -233,7 +244,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/Gradient-Generator",
             "ariaLabel": "View code for Gradient Generator project on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 18,
@@ -253,7 +265,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/Control-Local-Storage",
             "ariaLabel": "View code for Control Local Storage project on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 19,
@@ -273,7 +286,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/To-Do-List-By-Vue",
             "ariaLabel": "View code for To-Do List by Vue project on GitHub"
           }
-        ]
+        ],
+        "published": true
       },
       {
         "id": 20,
@@ -293,7 +307,8 @@ window.portfolioContentFallback = {
             "url": "https://github.com/mahmoudegh/Quizz-App",
             "ariaLabel": "View code for Quizz App project on GitHub"
           }
-        ]
+        ],
+        "published": true
       }
     ]
   },
@@ -301,35 +316,43 @@ window.portfolioContentFallback = {
     "skills": [
       {
         "name": "Vue",
-        "progress": "90%"
+        "progress": "90%",
+        "published": true
       },
       {
         "name": "Nuxt",
-        "progress": "95%"
+        "progress": "95%",
+        "published": true
       },
       {
         "name": "JavaScript",
-        "progress": "90%"
+        "progress": "90%",
+        "published": true
       },
       {
         "name": "RESTful API",
-        "progress": "88%"
+        "progress": "88%",
+        "published": true
       },
       {
         "name": "Bootstrap",
-        "progress": "90%"
+        "progress": "90%",
+        "published": true
       },
       {
         "name": "Tailwind",
-        "progress": "70%"
+        "progress": "70%",
+        "published": true
       },
       {
         "name": "HTML",
-        "progress": "85%"
+        "progress": "85%",
+        "published": true
       },
       {
         "name": "CSS",
-        "progress": "80%"
+        "progress": "80%",
+        "published": true
       }
     ]
   }

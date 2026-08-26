@@ -336,22 +336,6 @@
 //////////////////////////////////////// My Edit //////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-// Featured Work Shuffle
-$(function () {
-  "use strict";
-  $(document).on("click", "#work .featured-work-header ul li", function () {
-    const $work = $("#work");
-    const selectedClass = $(this).data("class");
-
-    $(this).addClass("active").siblings().removeClass("active");
-    if (selectedClass === "all") {
-      $work.find(".featured-work-items .shuffel").css("display", "block");
-    } else {
-      $work.find(".featured-work-items .shuffel").css("display", "none");
-      $work.find(selectedClass).parent().css("display", "block");
-    }
-  });
-});
 ///////////////////////////////////////////////////////////////////
 
 // Type Writer Effect

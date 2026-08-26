@@ -1,12 +1,44 @@
 {
   "skills": [
-    { "name": "Vue", "progress": "90%" },
-    { "name": "Nuxt", "progress": "95%" },
-    { "name": "JavaScript", "progress": "90%" },
-    { "name": "RESTful API", "progress": "88%" },
-    { "name": "Bootstrap", "progress": "90%" },
-    { "name": "Tailwind", "progress": "70%" },
-    { "name": "HTML", "progress": "85%" },
-    { "name": "CSS", "progress": "80%" }
+    {
+      "name": "Vue",
+      "progress": "90%",
+      "published": true
+    },
+    {
+      "name": "Nuxt",
+      "progress": "95%",
+      "published": true
+    },
+    {
+      "name": "JavaScript",
+      "progress": "90%",
+      "published": true
+    },
+    {
+      "name": "RESTful API",
+      "progress": "88%",
+      "published": true
+    },
+    {
+      "name": "Bootstrap",
+      "progress": "90%",
+      "published": true
+    },
+    {
+      "name": "Tailwind",
+      "progress": "70%",
+      "published": true
+    },
+    {
+      "name": "HTML",
+      "progress": "85%",
+      "published": true
+    },
+    {
+      "name": "CSS",
+      "progress": "80%",
+      "published": true
+    }
   ]
 }

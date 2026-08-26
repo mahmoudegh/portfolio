@@ -22,7 +22,10 @@
         "list-unstyled uppercase hvr-grow" + (index === 0 ? " active" : ""),
         filter.label
       );
-      item.dataset.class = filter.category === "all" ? "all" : "." + filter.category;
+      item.dataset.category = filter.category;
+      item.setAttribute("role", "button");
+      item.setAttribute("tabindex", "0");
+      item.setAttribute("aria-pressed", index === 0 ? "true" : "false");
       filterList.appendChild(item);
     });
 
@@ -30,8 +33,11 @@
     featuredWorkHeader.appendChild(container);
 
     const items = createElement("div", "featured-work-items");
-    work.projects.forEach(function (project) {
+    work.projects.filter(function (project) {
+      return project.published !== false;
+    }).forEach(function (project) {
       const card = createElement("div", "shuffel item-" + project.id);
+      card.dataset.category = project.category;
       const image = document.createElement("img");
       image.className = project.category + " img-responsive";
       image.src = project.image;
@@ -61,6 +67,29 @@
       items.appendChild(card);
     });
 
+    function filterProjects(category) {
+      filterList.querySelectorAll("li").forEach(function (filter) {
+        const isActive = filter.dataset.category === category;
+        filter.classList.toggle("active", isActive);
+        filter.setAttribute("aria-pressed", String(isActive));
+      });
+      items.querySelectorAll(".shuffel").forEach(function (card) {
+        card.style.display = category === "all" || card.dataset.category === category ? "" : "none";
+      });
+    }
+
+    filterList.addEventListener("click", function (event) {
+      const filter = event.target.closest("li[data-category]");
+      if (filter) filterProjects(filter.dataset.category);
+    });
+    filterList.addEventListener("keydown", function (event) {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const filter = event.target.closest("li[data-category]");
+      if (!filter) return;
+      event.preventDefault();
+      filterProjects(filter.dataset.category);
+    });
+
     mount.replaceChildren(featuredWorkHeader, items);
   }
 
@@ -69,7 +98,9 @@
     if (!mount || !Array.isArray(skills.skills)) return;
 
     const container = createElement("div", "container");
-    skills.skills.forEach(function (skill) {
+    skills.skills.filter(function (skill) {
+      return skill.published !== false;
+    }).forEach(function (skill) {
       const box = createElement("div", "skill-box");
       box.appendChild(createElement("div", "skill-name", skill.name));
       const progress = createElement("div", "skill-progress");

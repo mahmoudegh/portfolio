@@ -30,7 +30,7 @@ Credits:
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 ## Updating Work and Skills Data
 
-Edit `data/work.json` or `data/skills.json` to update portfolio content. For deployments served through HTTP/HTTPS, the page reads those JSON files directly. To keep a locally opened `index.html` (`file://`) in sync, regenerate its browser-safe fallback after editing data:
+Edit `data/work.json` or `data/skills.json` to update portfolio content. Each project and skill has a `published` key: set it to `false` to hide that item, or `true` to show it. For deployments served through HTTP/HTTPS, the page reads those JSON files directly. To keep a locally opened `index.html` (`file://`) in sync, regenerate its browser-safe fallback after editing data:
 
 ```bash
 node scripts/generate-content-fallback.js
