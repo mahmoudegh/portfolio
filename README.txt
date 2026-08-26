@@ -28,3 +28,12 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+## Updating Work and Skills Data
+
+Edit `data/work.json` or `data/skills.json` to update portfolio content. For deployments served through HTTP/HTTPS, the page reads those JSON files directly. To keep a locally opened `index.html` (`file://`) in sync, regenerate its browser-safe fallback after editing data:
+
+```bash
+node scripts/generate-content-fallback.js
+```
+
+Browsers block `fetch()` of local JSON files from `file://` pages as a security policy. The generated fallback allows the portfolio to work when opened directly; alternatively, serve the project locally with `python3 -m http.server` to read the JSON files directly.
