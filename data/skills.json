@@ -1,5 +1,4 @@
-// Portfolio content data. Edit this file to update the section.
-window.portfolioSkillsData = {
+{
   "skills": [
     {
       "name": "Vue",
@@ -42,4 +41,4 @@ window.portfolioSkillsData = {
       "published": true
     }
   ]
-};
+}

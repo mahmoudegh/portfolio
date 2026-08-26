@@ -1,5 +1,4 @@
-// Portfolio content data. Edit this file to update the section.
-window.portfolioWorkData = {
+{
   "filters": [
     {
       "label": "All Projects",
@@ -310,4 +309,4 @@ window.portfolioWorkData = {
       "published": true
     }
   ]
-};
+}

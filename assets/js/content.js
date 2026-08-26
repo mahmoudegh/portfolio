@@ -113,12 +113,27 @@
     mount.replaceChildren(container);
   }
 
-  function renderContent() {
-    renderWork(window.portfolioWorkData);
-    renderSkills(window.portfolioSkillsData);
+  function renderContent(data) {
+    renderWork(data.work);
+    renderSkills(data.skills);
     window.dispatchEvent(new Event("portfolio:data-loaded"));
   }
 
-  renderContent();
+  Promise.all([
+    fetch("data/work.json").then(function (response) {
+      if (!response.ok) throw new Error("Unable to load work data");
+      return response.json();
+    }),
+    fetch("data/skills.json").then(function (response) {
+      if (!response.ok) throw new Error("Unable to load skills data");
+      return response.json();
+    }),
+  ])
+    .then(function (data) {
+      renderContent({ work: data[0], skills: data[1] });
+    })
+    .catch(function (error) {
+      console.error("Unable to render portfolio content:", error);
+    });
 
 })();

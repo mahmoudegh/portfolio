@@ -30,4 +30,6 @@ Credits:
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 ## Updating Work and Skills Data
 
-Edit `data/work.json` or `data/skills.json` to update portfolio content. Each project and skill has a `published` key: set it to `false` to hide that item, or `true` to show it. These files are loaded directly by the page, so your changes take effect immediately when you refresh the portfolio.
+Edit `data/work.json` or `data/skills.json` to update portfolio content. Each project and skill has a `published` key: set it to `false` to hide that item, or `true` to show it.
+
+The data files are valid JSON and are loaded with `fetch()`. Open the portfolio through a local web server (for example, `python3 -m http.server`) or deploy it over HTTP/HTTPS; browsers block requests to local JSON files when `index.html` is opened directly with `file://`.
