@@ -15,13 +15,28 @@
     const featuredWorkHeader = createElement("div", "featured-work-header");
     const container = createElement("div", "container");
     const filterList = document.createElement("ul");
+    const publishedProjects = work.projects.filter(function (project) {
+      return project.published !== false;
+    });
+
+    function getProjectCount(category) {
+      return category === "all"
+        ? publishedProjects.length
+        : publishedProjects.filter(function (project) {
+            return project.category === category;
+          }).length;
+    }
 
     work.filters.forEach(function (filter, index) {
       const item = createElement(
         "li",
         "list-unstyled uppercase hvr-grow" + (index === 0 ? " active" : ""),
-        filter.label
+        filter.label + " "
       );
+      const projectCount = getProjectCount(filter.category);
+      const count = createElement("span", "featured-work-count", String(projectCount));
+      count.setAttribute("aria-label", projectCount + " projects");
+      item.appendChild(count);
       item.dataset.category = filter.category;
       item.setAttribute("role", "button");
       item.setAttribute("tabindex", "0");
@@ -33,9 +48,7 @@
     featuredWorkHeader.appendChild(container);
 
     const items = createElement("div", "featured-work-items");
-    work.projects.filter(function (project) {
-      return project.published !== false;
-    }).forEach(function (project) {
+    publishedProjects.forEach(function (project) {
       const card = createElement("div", "shuffel item-" + project.id);
       card.dataset.category = project.category;
       const image = document.createElement("img");

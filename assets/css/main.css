@@ -1941,6 +1941,26 @@ body.is-preload #footer {
   border-color: #ed1d24;
 }
 
+.featured-work-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.6em;
+  height: 1.6em;
+  margin-left: 0.5em;
+  padding: 0 0.4em;
+  border-radius: 999px;
+  color: #fff;
+  background-color: #08526d;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+.featured-work li.active .featured-work-count {
+  color: #ed1d24;
+  background-color: #fff;
+}
+
 .featured-work-items {
   display: flex;
   flex-wrap: wrap;

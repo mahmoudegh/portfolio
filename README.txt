@@ -31,6 +31,7 @@ Credits:
 ## Updating Work and Skills Data
 
 Edit `data/work.json` or `data/skills.json` to update portfolio content. Each project and skill has a `published` key: set it to `false` to hide that item, or `true` to show it.
+The number beside each Work filter is calculated from the published projects in `data/work.json`, so it updates automatically when projects are added, removed, published, or hidden.
 
 The data files are valid JSON and are loaded with `fetch()`. Browsers intentionally block `fetch()` requests to local files when `index.html` is opened directly with `file://`; this cannot be enabled by website JavaScript.
 
