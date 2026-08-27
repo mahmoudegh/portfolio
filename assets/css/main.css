@@ -1914,6 +1914,7 @@ body.is-preload #footer {
 }
 
 .featured-work li {
+  border-radius: 6px;
   color: #08526d;
   background-color: #fff;
   font-weight: bold;
