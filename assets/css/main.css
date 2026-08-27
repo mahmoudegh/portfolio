@@ -1914,12 +1914,13 @@ body.is-preload #footer {
 }
 
 .featured-work li {
+  align-items: center;
   border-radius: 6px;
   color: #08526d;
   background-color: #fff;
   font-weight: bold;
   border: 1px solid #ccc;
-  padding: 9px 15px;
+  padding: 6px 12px;
   margin-left: 3px;
   margin-right: 3px;
   font-size: 15px;
@@ -2005,7 +2006,11 @@ body.is-preload #footer {
 .item-17:hover .overlay,
 .item-18:hover .overlay,
 .item-19:hover .overlay,
-.item-20:hover .overlay {
+.item-20:hover .overlay,
+.item-21:hover .overlay,
+.item-22:hover .overlay,
+.item-23:hover .overlay
+ {
   display: flex;
   position: absolute;
   top: 0;

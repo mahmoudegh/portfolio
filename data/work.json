@@ -80,7 +80,7 @@
           "ariaLabel": "Preview Payit website"
         }
       ],
-      "published": true
+      "published": false
     },
     {
       "id": 10,
@@ -96,7 +96,7 @@
           "ariaLabel": "Preview Fan Network website"
         }
       ],
-      "published": true
+      "published": false
     },
     {
       "id": 11,
@@ -304,6 +304,54 @@
           "label": "Code",
           "url": "https://github.com/mahmoudegh/Quizz-App",
           "ariaLabel": "View code for Quizz App project on GitHub"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": 21,
+      "name": "deepmarks",
+      "category": "development",
+      "status": "Under development",
+      "image": "images/works/21.jpeg",
+      "alt": "Screenshot of Project 21 - A React.js Application for deepmarks",
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://deepmarks.vercel.app/name-branding",
+          "ariaLabel": "Preview deepmarks website"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": 22,
+      "name": "intwit.ch",
+      "category": "completed",
+      "status": "Completed",
+      "image": "images/works/22.jpeg",
+      "alt": "Screenshot of Project 23 - A Next.js Application for intwit.ch",
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://intwit.ch/en",
+          "ariaLabel": "Preview intwit.ch website"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": 23,
+      "name": "intwit.ch",
+      "category": "development",
+      "status": "Under development",
+      "image": "images/works/22.jpeg",
+      "alt": "Screenshot of Project 23 - A Next.js Application for intwit.ch",
+      "links": [
+        {
+          "label": "Preview",
+          "url": "https://pilotdev.intwit.ch/en",
+          "ariaLabel": "Preview intwit.ch website"
         }
       ],
       "published": true
