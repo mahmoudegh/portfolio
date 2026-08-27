@@ -1,6 +1,16 @@
 {
   "skills": [
     {
+      "name": "React",
+      "progress": "88%",
+      "published": true
+    },
+    {
+      "name": "Next",
+      "progress": "90%",
+      "published": true
+    },
+    {
       "name": "Vue",
       "progress": "90%",
       "published": true
@@ -16,6 +26,31 @@
       "published": true
     },
     {
+      "name": "TypeScript",
+      "progress": "85%",
+      "published": true
+    },
+    {
+      "name": "Codex",
+      "progress": "95%",
+      "published": true
+    },
+    {
+      "name": "ChatGPT",
+      "progress": "90%",
+      "published": true
+    },
+    {
+      "name": "Figma",
+      "progress": "95%",
+      "published": true
+    },
+    {
+      "name": "Postman",
+      "progress": "90%",
+      "published": true
+    },
+    {
       "name": "RESTful API",
       "progress": "88%",
       "published": true
@@ -23,6 +58,11 @@
     {
       "name": "Bootstrap",
       "progress": "90%",
+      "published": true
+    },
+    {
+      "name": "Shadcn",
+      "progress": "95%",
       "published": true
     },
     {
