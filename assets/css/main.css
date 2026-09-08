@@ -1987,30 +1987,7 @@ body.is-preload #footer {
 }
 
 
-.item-1:hover .overlay,
-.item-2:hover .overlay,
-.item-3:hover .overlay,
-.item-4:hover .overlay,
-.item-5:hover .overlay,
-.item-6:hover .overlay,
-.item-7:hover .overlay,
-.item-8:hover .overlay,
-.item-9:hover .overlay,
-.item-10:hover .overlay,
-.item-11:hover .overlay,
-.item-12:hover .overlay,
-.item-13:hover .overlay,
-.item-14:hover .overlay,
-.item-15:hover .overlay,
-.item-16:hover .overlay,
-.item-17:hover .overlay,
-.item-18:hover .overlay,
-.item-19:hover .overlay,
-.item-20:hover .overlay,
-.item-21:hover .overlay,
-.item-22:hover .overlay,
-.item-23:hover .overlay
- {
+.featured-work-items .shuffel:hover .overlay {
   display: flex;
   position: absolute;
   top: 0;
