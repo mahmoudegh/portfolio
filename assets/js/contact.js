@@ -9,10 +9,11 @@
           const companyName = document.getElementById("companyName").value;
           const emailTo = document.getElementById("emailTo").value;
           const subject = "Application for Frontend Web Developer Position";
+          const yearsOfExperience = new Date().getFullYear() - 2020 - (new Date().getMonth() < 6 ? 1 : 0);
           const body = `
 Hello ${managerName},
           
-I hope this message finds you well. My name is Mahmoud Galal, and I’m reaching out to express my interest in the Frontend Web Developer position at ${companyName}. With over 3 years of experience in frontend development, I’m confident in my ability to contribute effectively to your team.
+I hope this message finds you well. My name is Mahmoud Galal, and I’m reaching out to express my interest in the Frontend Web Developer position at ${companyName}. With over ${yearsOfExperience} years of experience in frontend development, I’m confident in my ability to contribute effectively to your team.
          
 I’ve attached my resume to this email, and you can also download it directly here: https://mahmoudegh.github.io/portfolio/#resume
          
