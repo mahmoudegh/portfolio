@@ -1,0 +1,40 @@
+{
+  "certificates": [
+    {
+      "name": "HTML Fundamentals Certificate",
+      "issuer": "SoloLearn",
+      "image": "images/certificates/html-certificate.jpg",
+      "url": "https://www.sololearn.com/Certificate/1014-11995964/jpg/"
+    },
+    {
+      "name": "CSS Fundamentals Certificate",
+      "issuer": "SoloLearn",
+      "image": "images/certificates/css-certificate.jpg",
+      "url": "https://www.sololearn.com/Certificate/1023-11995964/jpg/"
+    },
+    {
+      "name": "JavaScript Programming Certificate",
+      "issuer": "SoloLearn",
+      "image": "images/certificates/javaScript-certificate.png",
+      "url": "https://www.sololearn.com/certificates/course/en/11995964/1024/landscape/png"
+    },
+    {
+      "name": "Frontend Web Development Challenger Track Certificate",
+      "issuer": "Udacity",
+      "image": "images/certificates/Udacity-challenger-track.png",
+      "url": "https://www.udacity.com/certificate/e/6399bc14-d3f8-11eb-a390-5fb1610b7c4d"
+    },
+    {
+      "name": "Frontend Web Development Professional Track Certificate",
+      "issuer": "Udacity",
+      "image": "images/certificates/Udacity-professional-track.png",
+      "url": "https://www.udacity.com/certificate/e/cba37c26-a826-11eb-9b21-872ff4746dfc"
+    },
+    {
+      "name": "JavaScript Basics Certificate",
+      "issuer": "HackerRank",
+      "image": "images/certificates/hackerRank-javaScript-basics.png",
+      "url": "https://www.hackerrank.com/certificates/325314a723ac"
+    }
+  ]
+}
