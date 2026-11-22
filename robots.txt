@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://mahmoudegh.github.io/portfolio/sitemap.xml
